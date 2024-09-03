@@ -14,7 +14,7 @@ class AllNewsCubit extends Cubit<AllNewsState> {
     try {
       String cat = Category.toLowerCase();
       final response = await DioHelper.getData(
-        path: "https://newsapi.org/v2/top-headlines?country=de&category=$cat&apiKey=453d4c5b4064475eb2565d9b2711195d",
+        path: "https://newsapi.org/v2/top-headlines?country=de&category=$cat&apiKey=d0cd0e308b1e4ba7b418e75e88ab51a6",
 
       );
       newsModel = NewsModel.fromJson(response.data);

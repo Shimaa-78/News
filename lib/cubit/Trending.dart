@@ -13,7 +13,7 @@ class TrendingCubit extends Cubit<TrendingState> {
     emit(HomeTrendingLoading());
     try {
       final response = await DioHelper.getData(
-        path: "https://newsapi.org/v2/everything?q=tesla&from=2024-09-02&sortBy=publishedAt&apiKey=453d4c5b4064475eb2565d9b2711195d",
+        path: "https://newsapi.org/v2/everything?q=tesla&from=2024-09-02&sortBy=publishedAt&apiKey=d0cd0e308b1e4ba7b418e75e88ab51a6",
       );
       newsModel2 = NewsModel.fromJson(response.data);
       if (newsModel2.status == "ok") {
